@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+/* src/CodeEditor.css */
+
+.code-editor {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.code-input,
+.code-output {
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 0;
+  white-space: pre-wrap; /* Allow wrapping of text */
+  word-wrap: break-word; /* Handle word wrapping */
+  overflow-wrap: break-word; /* Handle overflow wrapping */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.code-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: transparent; /* Make text invisible */
+  caret-color: black; /* Keep the caret visible */
+  background-color: transparent; /* Make background transparent */
+  outline: none; /* Remove outline for better appearance */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.code-output {
+  position: relative;
+  z-index: 0;
+  color: black; /* Default text color for highlighted code */
+  pointer-events: none; /* Make code-output non-interactive */
 }
