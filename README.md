@@ -1,6 +1,6 @@
 # Simple Code Editor App
 
-This is a simple React application that demonstrates a code editor using '@uiw/react-textarea-code-editor' with PrismJS syntax highlighting and rehype plugins.
+This is a simple React application that demonstrates a code editor using PrismJS syntax highlighting.
 
 ## Getting Started
 
@@ -9,8 +9,7 @@ To run this application locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone 
-   cd <repository-directory>
+   git clone https://github.com/yogayataverma/CodeEditor.git
    ```
 
 2. Install dependencies:
@@ -53,10 +52,3 @@ function App() {
 
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-```
-
-Replace `<repository-url>` and `<repository-directory>` with your actual repository details. This Markdown file provides a structured guide for users to understand and use your Simple Code Editor application effectively.
