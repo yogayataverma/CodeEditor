@@ -1,6 +1,3 @@
-Certainly! Here's the Markdown code for your README file that you can copy and paste into your repository:
-
-```markdown
 # Simple Code Editor App
 
 This is a simple React application that demonstrates a code editor using '@uiw/react-textarea-code-editor' with PrismJS syntax highlighting and rehype plugins.
