@@ -1,6 +1,6 @@
-# Simple Code Editor App
+# (CodeGlow)Simple Code Syntax Highlighter App
 
-This is a simple React application that demonstrates a code editor using PrismJS syntax highlighting.
+This is a simple React application that demonstrates a code syantx highlighter using PrismJS syntax highlighting.
 
 ## Getting Started
 
